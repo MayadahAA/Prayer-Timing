@@ -174,7 +174,6 @@
             const date = weekDay + " " + dayDate + " " + month + " " + year
             document.getElementById("date").innerHTML = date
 
-        // document.getElementById("fajr").innerHTML = timings.Fajr
             console.log(response.data.data.timings);
         })
         .catch(function (error) {
@@ -182,7 +181,6 @@
         })
     }
 
-    getPrayersTimingsOfCity("Riydh")
 
     function fillTimeForPrayer(id, time) {
         document.getElementById(id).innerHTML = time
